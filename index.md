@@ -1,4 +1,4 @@
-# Publish your Obsidian Notes
+# Publish your Obsidian Notes 
 
 (MkDocs template)
 
