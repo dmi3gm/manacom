@@ -8,6 +8,16 @@
 }
 
 @font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
   font-family: 'PT Sans Caption';
   font-style: normal;
   font-weight: normal;
@@ -31,7 +41,7 @@
 html, body {
 	height: 100%;
 	background-color: #eeeeee;
-	font-family: PT Sans Caption, sans-serif;
+	font-family: DM Sans, sans-serif;
 	color: #black;
 	font-size: 18pt;
 	line-height: 1.2;
