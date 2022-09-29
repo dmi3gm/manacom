@@ -1,0 +1,238 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+		box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/pt-sans-caption-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-caption-v18-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-mono-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: lighter;
+  src: local(''),
+       url('../fonts/pt-mono-v13-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-mono-v13-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html, body {
+	height: 100%;
+	background-color: #eeeeee;
+	font-family: PT Sans Caption, sans-serif;
+	color: #black;
+	font-size: 18pt;
+	line-height: 1.2;
+}
+
+.wrapper{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.fullscreen{
+	min-height: 100vh;
+	background-color: #666;
+	display: flex;
+	padding: 1px;
+	flex: 1 0 auto;
+}
+.fullscreen_bg {
+	background: url("../8.png") center / cover no repeat fixed;
+	/* background-color: #333; */
+}
+
+.fullscreen_body{
+	background-color: fefefe;
+	flex: 1 1 auto;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	/* text-align: center; */
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	padding: 0px 10px 0px 10px;
+
+}
+.fullscreen_title{
+font-size: 2em;
+		margin: 0px 0px 0px 0px
+		
+}
+
+.fullscreen_text{
+		font-size: 30px;
+		margin: 0px 0px 20px 0px
+}
+
+
+.link_s{
+	display: inline-block;
+	/* postion: absolute;  */
+	/* right: 0; */
+	line-height: 30 px;
+	text-transform: lowercase;
+	color: black;
+	text-decoration: none;
+	/* letter-spacing: 2px; */
+	/* background-color: #e7e7e7; */
+	border: 2px solid black;
+	align-self: right;
+	padding: 1px 15px 2.5px 15px;
+	margin: 10px 0px 10px 0px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* .content{
+	border: 2px solid black;
+	margin: 0px auto;
+	padding: 0px 5px;
+}
+
+.content_body{
+	max-width: 320;
+	margin: 0px auto;
+	padding: 10px 20px;
+}
+ */
+
+h1{
+	font-size: max(1.4em, min(2em, 2vw));
+	line-height: 2;
+	text-transform: uppercase;
+/* 	font-style: normal;*/
+	font-weight: normal; 
+}
+
+h2{
+	margin: 16px 0px 8px 0px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+h3{
+	margin: 20px 0px 10px 0px;
+	font-size: 0.9em;
+	text-transform: capitalize;
+}
+
+p{
+	margin: 0px 0px 8px 0px;
+	/* font-size:max(1em, min(1.6em, 2.2vw)); */
+}
+
+ul li{
+	list-style-position:inside; /* список внутри блока*/
+	list-style-type: none; /* Убираем маркеры у списка */
+}
+
+ul li:before {
+    content: "- "; /* Добавляем в качестве маркера символ */
+}
+
+ol li{
+	list-style-position:inside; /* список внутри блока*/
+}
+
+
+
+
+
+
+
+pre {
+	font-family: PT Mono;
+		/* font-size: 14pt; */
+	/* margin: 0px 0px 15px 0px; */
+	/* font-size:max(1em, min(1.6em, 2.2vw)); */
+} */
+
+p:last-child {
+	margin: 0px;
+}
+
+a {
+	display: inline-block;
+	/* postion: absolute;  */
+	/* right: 0; */
+	line-height: 30 px;
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+	/* letter-spacing: 2px; */
+	/* background-color: #e7e7e7; */
+	border: 2px solid black;
+	align-self: right;
+	padding: 0px 15px;
+	margin: 10px 0px 10px 0px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	/* outline: none; */
+}
+
+
+.footer{
+	/* min-height: 100vh; */
+	background-color: #666;
+	display: flex;
+	/* padding: 1px; */
+}
+
+.footer_body{
+	background-color: fefefe;
+	font-size: 0.9em;
+	/* flex: 1 1 auto; */
+	width: 100%;
+	max-width: 400;
+	margin: 2px auto;
+	text-align: center;
+	/* display: flex; */
+	/* flex-direction: column; */
+	justify-content: center;
+	padding: 0px 10px;
+}
+.div.text {
+	overflow: hidden;
+}
+div.text div.left { 
+		margin: 13px auto;
+		float: left;
+			width: 66%;
+				text-align: left;
+				}
+div.text div.right { 
+	float: right;}
+
+.right {
+	text-align:right;
+		bottom: 0px;
+	/* margin-bottom: 2em; */
+	/* padding: 20px; */
+	/* line-height: 2em; */
+}
+
+.center {
+	text-align:center;
+		bottom: 0px;
+	/* margin-bottom: 2em; */
+	/* padding: 20px; */
+	/* line-height: 2em; */
+}
+
+nav {
+position: relative;
+	bottom: 0px;
+}
