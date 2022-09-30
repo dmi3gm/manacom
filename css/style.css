@@ -8,6 +8,16 @@
 }
 
 @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/Atkinson.woff2') format('woff2'),
+        url('../fonts/Atkinson.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family: 'DM Sans';
     src: url('../fonts/DMSans-Regular.woff2') format('woff2'),
         url('../fonts/DMSans-Regular.woff') format('woff');
@@ -41,7 +51,7 @@
 html, body {
 	height: 100%;
 	background-color: #eeeeee;
-	font-family: DM Sans, sans-serif;
+	font-family: Atkinson Hyperlegible, sans-serif;
 	color: #black;
 	font-size: 18pt;
 	line-height: 1.2;
@@ -179,9 +189,9 @@ a {
 	text-decoration: none;
 	/* letter-spacing: 2px; */
 	/* background-color: #e7e7e7; */
-	border: 2px solid black;
+	border: 1px solid black;
 	align-self: right;
-	padding: 0px 15px;
+	padding: 3px 10px 0px 10px;
 	margin: 10px 0px 10px 0px;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	/* outline: none; */
@@ -197,7 +207,7 @@ a {
 
 .footer_body{
 	background-color: fefefe;
-	font-size: 0.9em;
+	font-size: 1em;
 	/* flex: 1 1 auto; */
 	width: 100%;
 	max-width: 400;
@@ -212,7 +222,7 @@ a {
 	overflow: hidden;
 }
 div.text div.left { 
-		margin: 13px 0px 0px 10px;
+		margin: 14px 0px 0px 10px;
 		float: left;
 			width: 66%;
 				text-align: left;
