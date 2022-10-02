@@ -152,13 +152,15 @@ h3{
 }
 
 p{
-	margin: 0px 0px 8px 0px;
+	margin: 0px 0px 10px 0px;
+	text-align: justify
 	/* font-size:max(1em, min(1.6em, 2.2vw)); */
 }
 
 ul li{
 	list-style-position:inside; /* список внутри блока*/
 	list-style-type: none; /* Убираем маркеры у списка */
+		margin: 0px 0px 10px 0px;
 }
 
 ul li:before {
